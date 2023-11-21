@@ -85,7 +85,7 @@
     <input type="text" placeholder="URL de la foto de tu gato" required>
     <!--<input type=""> sirve para que el usuario pueda incluir una respuesta en el formulario, "text" para que sea en forma de texto. No necesita cierre.-->
     <!--<placeholder=""> sirve para indicar qué respuesta debe introducir el usuario.-->
-    <!--<required> sirve para indicar que es un campo obligatorio.-->
+    <!--required sirve para indicar que es un campo obligatorio.-->
     <button type="submit">Enviar</button>
     <!--<button type=""></button> sirve para crear un botón, "submit" para enviar la respuesta.-->
   </form>
@@ -93,22 +93,34 @@
   <hr>
   <form>
     <h3>¿Tu gato prefiere estar en...?</h3>
-    <label for="interior"><input id="interior" type="radio" name="interior-exterior">Interior</label>
+    <label for="interior">
+      <input id="interior" type="radio" value="interior" name="interior-exterior" checked>Interior
+    </label>
     <!--"radio" sirve para que el formulario sea de tipo opción. Escribir dicha palabara/opción a continuación del cierre.-->
     <!--<label></label> sirve para hacer que el texto también sirva como botón.-->
     <!--for="" y id="" sirven para conectar la etiqueta. Deben ser iguales.-->
     <!--name="" sirve para crear un grupo de opciones y que solo una de ella pueda ser marcada (-) o todas las deseadas (mismo nombre).-->
+    <!--checked sirve para seleccionar una opción por defecto.-->
+    <!--value="" sirve para dar un valor que va a recibir el servidor al seleccionar esa opción.-->
     <br>
     <!--<br> sirve para hacer un salto de línea.-->
-    <label for="exterior"><input id="exterior" type="radio" name="interior-exterior">Exterior</label>
+    <label for="exterior">
+      <input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior
+    </label>
 
     <h3>Tu gato es...</h3>
-    <label for="cariñoso"><input id="cariñoso" type="checkbox" name="personalidad">Cariñoso</label>
+    <label for="cariñoso">
+      <input id="cariñoso" type="checkbox" value="cariñoso" name="personalidad" checked>Cariñoso
+    </label>
     <!--"checkbox" sirve para que el formulario sea de tipo casilla de verificación.-->
     <br>
-    <label for="perezoso"><input id="perezoso" type="checkbox" name="personalidad">Perezoso</label>
+    <label for="perezoso">
+      <input id="perezoso" type="checkbox" value="perezoso" name="personalidad">Perezoso
+    </label>
     <br>
-    <label for="enérgico"><input id="enérgico" type="checkbox" name="personalidad">Enérgico</label>
+    <label for="enérgico">
+      <input id="enérgico" type="checkbox" value="enérgico" name="personalidad">Enérgico
+    </label>
   </form>
 </body>
 
