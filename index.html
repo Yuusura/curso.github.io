@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <!--<!DOCTYPE html> sirve para señalar en qué vamos a trabajar.-->
 <html lang="es">
+<!--<html> sirve para señalar el elemento raíz "html".-->
 <!--lang="es" sirve para señalar en qué idioma vamos a trabajar. "es" señala el idioma español.-->
 
 <head>
-<!--<head></head> sirve para introducir el encabezado.-->
-
+<!--<head></head> sirve para introducir el encabezado. Contiene los metadatos, archivos CSS, JS.-->
+<title>AppDeGatos</title>
+<!--<title></title> sirve para introducir el título de la página web. Nombre en la pestaña.-->
 </head>
+
 <body>
-<!--<body></body> sirve para introducir el cuerpo.-->
+<!--<body></body> sirve para introducir el cuerpo/estructura de la página.-->
   <h2>AppDeGatos 😺</h2>
   <!--<h></h> sirve para poner el título en negrita. Va de 1 a 6, según tamaño. -->
     <h3>Imágenes de gatos</h3>
@@ -93,7 +96,7 @@
   </form>
 
   <hr>
-  <form>
+  <form action="./Enviar_respuesta.html">
     <h3>¿Tu gato prefiere estar en...?</h3>
     <label for="interior">
       <input id="interior" type="radio" value="interior" name="interior-exterior" checked>Interior
@@ -127,9 +130,8 @@
 
   <footer>
   <!--<footer></footer> sirve para poner un pie de página.-->
-  <p>Sin derechos de autor - <a href="https://freecodecamp.org/" target="_blank">freeCodeCamp.org</a></p>
-  "></a></p>
+  <p><small>Sin derechos de autor - <a href="https://freecodecamp.org/" target="_blank">freeCodeCamp.org</a></small></p>
+  <!--<small></small> sirve para hacer el texto más pequeño.-->
   </footer>
 </body>
-
 </html>
