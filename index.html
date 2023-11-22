@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<!--<!DOCTYPE html> sirve para señalar en qué vamos a trabajar.-->
+<!--<!DOCTYPE html> sirve para informar a los navegadores que a continuación van a leer HTML5.-->
 <html lang="es">
-<!--<html> sirve para señalar el elemento raíz "html".-->
+<!--<html> sirve para informar a los navegadores que en su interior es donde vamos a encontrar el HTML5. Debe cerrarse al final del documento web.-->
 <!--lang="es" sirve para señalar en qué idioma vamos a trabajar. "es" señala el idioma español.-->
 
 <head>
-<!--<head></head> sirve para introducir el encabezado. Contiene los metadatos, archivos CSS, JS.-->
-<title>AppDeGatos</title>
+<!--<head></head> es la cabecera del documento web. Contiene informaciones técnicas para los navegadores web y para los motores de búsqueda.-->
+<title>AppDeGatos (<abbr title="App de gatos">ADG</abbr>)</title>
 <!--<title></title> sirve para introducir el título de la página web. Nombre en la pestaña.-->
+<!--<abbr></abbr> sirve para introducir abreviaturas.-->
+<!--title="descripción de la abreviatura" sirve para que aparezca en forma de tooltip.-->
+<!--cite="descripción de la abreviatura" sirve para que aparezca al lado descrito.-->
+
 </head>
 
 <body>
-<!--<body></body> sirve para introducir el cuerpo/estructura de la página.-->
+<!--<body></body> Es el cuerpo del documento web. Encierra las etiquetas que van a aportar estructura y contenido a nuestro documento web.-->
   <h2>AppDeGatos 😺</h2>
   <!--<h></h> sirve para poner el título en negrita. Va de 1 a 6, según tamaño. -->
-    <h3>Imágenes de gatos</h3>
-    <!--TODO: Agregar enlace a imágenes de gatos.-->
-    <p>Haz clic <a href= "https://freecodecamp.org/" target="_blank">aquí</a> para ver más imágenes de gatos.</p>
+    <blockquote>Imágenes de gatos</blockquote>
+    <!--<blockquote></blockquote> sirve para poner sangría.-->
+    <p>Haz clic <a href= "https://freecodecamp.org/" target="_blank">aquí</a> para <u>ver más imágenes de gatos</u>.</p>
     <!--<p></p> sirve para escribir párrafos.-->
     <!--<a href=""></a> sirve para introducir enlaces internos (# + id) o externos (URL).-->
     <!--target="_blank" sirve para que el enlace se abra en una nueva pestaña.-->
+    <!--<u></u> y <ins></ins> sirven para subrayar el texto.-->
     
     <ul>
       <li><a href="#parrafo-1">Párrafo 1</a></li>
@@ -28,6 +33,7 @@
       <li><a href="#parrafo-4">Párrafo 4</a></li>
       <li><a href="#parrafo-5">Párrafo 5</a></li>
       <li><a href="./Mis ejercicios/Menu.html" target="_blank">Ejercicios</a></li>
+      <li><a href="./Mis ejercicios/Ejercicios Francesc Ricart.html" target="_blank">Ejercicios de internet</a></li>
     </ul>
 
     <p><a href="https://www.freecodecamp.org/" target="_blank"> <img src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda."></a></p>
@@ -60,18 +66,18 @@
   <hr>
   <!--<hr> sirve para intruducir una línea horizontal de separación. No necesita cierre.-->
   <h3><em>Listas de gatos.</em></h3>
-  <!--<em></em> sirve para poner el texto en cursiva.-->
+  <!--<em></em> y <i></i> sirven para poner el texto en cursiva.-->
   <div>
   <!--<div></div> sirve para crear un contenedor.-->
     <p>Cosas que los gatos <strong>aman</strong>:</p>
-    <!--<strong></strong> sirve para poner el texto en negrita.-->
+    <!--<strong></strong> y <b></b> sirven para poner el texto en negrita.-->
     <ul>
     <!--<ul></ul> sirve para crear una lista no ordenada.-->
       <li>Menta gatuna.</li>
       <li>Apuntadores láser.</li>
       <li><s>Lasaña.</s></li>
       <!--<li></li> sirve para introducir los elementos en la lista.-->
-      <!--<s></s> sirve para tachar el texto.-->
+      <!--<s></s> y <del></del> sirven para tachar el texto.-->
     </ul>
     <img src="https://cdn.bolivia.com/gastronomia/2012/10/26/lasana-boliviana-3495.webp" alt="Lasaña.">
 
@@ -135,3 +141,8 @@
   </footer>
 </body>
 </html>
+
+<!--Consideraciones importantes:
+No se puede escribir html entre  <html> ni <head>.
+No se puede escribir html entre  </head> ni <body>.
+No se puede escribir html entre  </body> ni </html>.-->
